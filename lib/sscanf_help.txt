@@ -1,0 +1,25 @@
+What is the job of my_mini_sscanf ?
+
+- This function had to read some information from a file, but also grab them
+from a string for my_mini_sscanf.
+
+
+How work the function int_parser ?
+
+- First we will define a integer "sign" -> will be used to find the sign before
+the integer.
+
+- In the second time we will check the sign -> if the input is equal to '-' :
+    * We will give -1 to sign because it's a negative value
+    * We will skip the '-' with "input"
+
+- In the third time we will :
+    * Check if the "input" is a digit (with a simple isdigit function)
+    * We will convert the "input" to his numeric version with - '0'
+    * After we add this value to "result" and multiply it by 10 (decimal)
+
+- At the end we :
+    * Add the sign to the "result" -> (*result *= sign)
+
+
+How work the char_parser ?
